@@ -17,3 +17,6 @@ public static byte[] PrintNV = new byte[] { 0x1C, 0x70, 0x01, 0x00 };
 |1,49            |Double-wide Mode              |
 |2,50            |Double-tall Mode              |
 |3,51            |Quadruple Mode              |
+
+
+![image](https://github.com/ivanphp/pp5200/blob/master/S__21061644.jpg)
