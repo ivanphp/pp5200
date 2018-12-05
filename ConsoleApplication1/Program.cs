@@ -20,9 +20,7 @@ namespace ConsoleApplication4
         public static byte[] ToLeft = new byte[] { 0x1B, 0x61, 0x00 };      // Select justification ESC a 1  (0:Left ,1:Center ,2:Right) ,靠左對齊
         public static byte[] ToRight = new byte[] { 0x1B, 0x61, 0x02 };     // Select justification ESC a 1  (0:Left ,1:Center ,2:Right) ,靠右對其
         public static byte[] CutPaper = new byte[] { 0x1D, 0x56, 0x00 };    // 切紙
-
-        public static byte[] PrintNV = new byte[] { 0x1C, 0x70, 0x01, 0x00 };    // Printer NV-BitMap
-        
+               
         public static byte[] linefeed = new byte[] { 0x0A };                // 換行
         public static byte[] Magnify = new byte[] { 0x1B, 0x4D, 0x01 };     // Select character font ESC M n ,
         public static byte[] Initialize = new byte[] { 0x1B, 0x40 };        // Initialize printer  ESC @ ,初始
@@ -41,6 +39,10 @@ namespace ConsoleApplication4
         public static byte[] BarCodeHRI = new byte[] { 0x1D, 0x48, 0x00 };      // GS H n : Select print position of HRI characters (0x00:不列印,0x02:印),資訊是否印在下方
         public static byte[] BarCodeHeight = new byte[] { 0x1D, 0x68, 0x28 };   // GS h n : Set bar code height ,BarCode高度 1cm = 80(10),
         public static byte[] BarCodeWidth = new byte[] { 0x1D, 0x77, 0x01 };    // GS w n : Set bar code width ,因為使用 58mm 紙寬並列印 19 碼, 故 n 只能 = 1 才能列印
+        #endregion
+
+        #region  列印LOGO
+        public static byte[] PrintNV = new byte[] { 0x1C, 0x70, 0x01, 0x00 };    // Printer NV-BitMap
         #endregion
 
         #region 設定列印範圍
